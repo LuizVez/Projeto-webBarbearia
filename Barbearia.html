@@ -1,17 +1,24 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
+    <link rel="stylesheet" href="estilo.css">
     <meta charset="UTF-8">
     <title>Barbearia Elegante</title>
 </head>
 <body>
     <header>
         <h1>Barbearia Elegante</h1>
+        <p>Seu estilo, nossa paixão</p>
     </header>
-    <div>
-        <section>
+    <nav>
+        <a href="#marcar-horario">Marcar Horário</a>
+        <a href="#cadastrar">Cadastrar</a>
+        <a href="#Informações-Adicionais">Informações Adicionais</a>
+    </nav>
+    <div class="hora">
+        <section id="marcar-horario">
             <h2>Marcar Horário</h2>
-            <form method="post">
+            <p>Preencha o formulário abaixo para marcar um horário em nossa barbearia. Garantimos um atendimento de qualidade e personalizado para você.</p>
+            <form method="post" action="marcado.html">
                 <p>
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" required>
@@ -32,7 +39,7 @@
                     <label for="hora">Hora:</label>
                     <input type="time" id="hora" name="hora" required>
                 </p>
-                <div>
+                <div class="button-container">
                     <input type="submit" value="Marcar">
                     <input type="reset" value="Limpar">
                 </div>
@@ -40,9 +47,10 @@
         </section>
                 </p>
         </section>
-        <section>
+        <section id="cadastrar">
             <h2>Cadastrar</h2>
-            <form method="post">
+            <p>Cadastre-se para receber nossas novidades e promoções exclusivas diretamente no seu email. Não perca as melhores ofertas da Barbearia Elegante!</p>
+            <form method="post" action="cadastrado.html">
                 <p>
                     <label for="nome-completo">Nome Completo:</label>
                     <input type="text" id="nome-completo" name="nome-completo" required>
@@ -55,22 +63,28 @@
                     <label for="telefone">Telefone:</label>
                     <input type="tel" id="telefone" name="telefone" required>
                 </p>
-                <div>
+                <div class="button-container">
                     <input type="submit" value="Cadastrar">
                     <input type="reset" value="Limpar">
                 </div>
             </form>
         </section>
-        <section>
-            <div>
+        <section id="Informações-Adicionais">
+            <div class="info-container">
                 <h2>Informações Adicionais</h2>
                 <p>Encontre-nos:</p>
                 <p>Localização: <a href="https://maps.google.com/">123 Rua das Barbearias, Cidade, País</a></p>
                 <p>Instagram: <a href="https://instagram.com/barbeariaelegante">@barbeariaelegante</a></p>
                 <p>Telefone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+                <p>WhatsApp: <a href="https://wa.me/1234567890">+123 456-7890</a></p>
+                <p>Elogios de Clientes:</p>
+                <p>"Atendimento excepcional, cortes de alta qualidade e ambiente muito acolhedor. Recomendo a todos!" - Cliente Satisfeito</p>
+                <p>"Sempre saio satisfeito da Barbearia Elegante. Profissionais qualificados e serviços de primeira." - Cliente Fiel</p>
+            </div>
         </section>
     </div>
     <footer>
+        <p>Barbearia Elegante - Todos os direitos reservados &copy; 2024</p>
     </footer>
 </body>
 </html>

@@ -12,24 +12,28 @@
     <nav>
         <a href="#marcar-horario">Marcar Horário</a>
         <a href="#cadastrar">Cadastrar</a>
-        <a href="#Informações-Adicionais">Informações Adicionais</a>
+        <a href="#informacoes-adicionais">Informações Adicionais</a>
     </nav>
-    <div class="hora">
+    <div class="container">
         <section id="marcar-horario">
             <h2>Marcar Horário</h2>
+            <div class="image-container">
+                <img src="https://www.sergiomartins.pt/web/images/blogs/capa_rlbarber.jpg" alt="Imagem da Barbearia">
+            </div>
             <p>Preencha o formulário abaixo para marcar um horário em nossa barbearia. Garantimos um atendimento de qualidade e personalizado para você.</p>
             <form method="post" action="marcado.html">
+                <br>
                 <p>
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" required>
                 </p>
                 <p>
                     <label for="barbeiro">Barbeiro:</label>
-                        <select id="barbeiro" name="barbeiro" required>
-                            <option value="joao">João</option>
-                            <option value="carlos">Carlos</option>
-                            <option value="marcos">Marcos</option>
-                        </select>
+                    <select id="barbeiro" name="barbeiro" required>
+                        <option value="joao">João</option>
+                        <option value="carlos">Carlos</option>
+                        <option value="marcos">Marcos</option>
+                    </select>
                 </p>       
                 <p>
                     <label for="data">Data:</label>
@@ -39,13 +43,35 @@
                     <label for="hora">Hora:</label>
                     <input type="time" id="hora" name="hora" required>
                 </p>
+                <h3>Tipos de Corte</h3>
+                <div class="corte-container">
+                    <div class="corte">
+                        <label>Corte Moderno - R$ 50,00</label>
+                        <input type="checkbox" id="corte-moderno" name="corte-moderno" value="Corte Moderno">
+                    </div>
+                    <div class="corte">
+                        <label>Corte Clássico - R$ 40,00</label>
+                        <input type="checkbox" id="corte-classico" name="corte-classico" value="Corte Clássico">
+                    </div>
+                    <div class="corte">
+                        <label>Corte Degrade - R$ 45,00</label>
+                        <input type="checkbox" id="corte-degrade" name="corte-degrade" value="Corte Degrade">
+                    </div>
+                    <div class="corte">
+                        <label>Corte + Barba - R$ 60,00</label>
+                        <input type="checkbox" id="corte-barba" name="corte-barba" value="Corte + Barba">
+                    </div>
+                    <div class="corte">
+                        <label>Apenas barba - R$ 20,00</label>
+                        <input type="checkbox" id="apenas-barba" name="apenas-barba" value="Corte + Barba">
+
+                    </div>
+                </div>
                 <div class="button-container">
                     <input type="submit" value="Marcar">
                     <input type="reset" value="Limpar">
                 </div>
             </form>
-        </section>
-                </p>
         </section>
         <section id="cadastrar">
             <h2>Cadastrar</h2>
@@ -69,14 +95,15 @@
                 </div>
             </form>
         </section>
-        <section id="Informações-Adicionais">
+        <section id="informacoes-adicionais">
             <div class="info-container">
                 <h2>Informações Adicionais</h2>
                 <p>Encontre-nos:</p>
                 <p>Localização: <a href="https://maps.google.com/">123 Rua das Barbearias, Cidade, País</a></p>
                 <p>Instagram: <a href="https://instagram.com/barbeariaelegante">@barbeariaelegante</a></p>
-                <p>Telefone: <a href="tel:+1234567890">(123) 456-7890</a></p>
-                <p>WhatsApp: <a href="https://wa.me/1234567890">+123 456-7890</a></p>
+                <p>Telefone: <a href="tel:+0834567890">(083) 456-7890</a></p>
+                <p>WhatsApp: <a href="https://wa.me/5508007890">+55 0800-7890</a></p>
+                <br>
                 <p>Elogios de Clientes:</p>
                 <p>"Atendimento excepcional, cortes de alta qualidade e ambiente muito acolhedor. Recomendo a todos!" - Cliente Satisfeito</p>
                 <p>"Sempre saio satisfeito da Barbearia Elegante. Profissionais qualificados e serviços de primeira." - Cliente Fiel</p>
